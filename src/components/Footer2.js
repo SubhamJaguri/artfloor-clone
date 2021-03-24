@@ -21,7 +21,6 @@ function Footer2() {
           </li>
         </ul>
         <div className='footer_submenu_1'>
-          {/*  Track your order | Shipping costs & insurance | Payment methods | Cancelations, returns & refunds  */}
           <ul>
             <li>
               <a href='/'> Track your order</a>

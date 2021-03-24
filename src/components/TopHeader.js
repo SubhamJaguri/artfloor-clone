@@ -31,10 +31,6 @@ export default function TopHeader() {
         </div>
         <div className='user'>
           <PersonIcon />
-          {/* <div className='tool_box tool_box_user'>
-            <div className='btn_signin'>Sign In</div>
-            <Divider />
-          </div> */}
         </div>
         <div className='globe'>
           <PublicIcon />
