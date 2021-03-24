@@ -1,0 +1,56 @@
+.top_header_links {
+  float: right;
+  text-align: right;
+  display: flex;
+  height: 100%;
+}
+.cart,
+.user,
+.globe {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+}
+/* .user > .tool_box {
+  position: absolute;
+  height: 600px;
+  padding: 16px 16px;
+  bottom: -60px;
+  background-color: #333;
+} */
+.cart:hover,
+.globe:hover,
+.user:hover {
+  background-color: #ffb300;
+}
+.cart > svg,
+.user > svg,
+.globe > svg {
+  font-size: 1.4rem;
+}
+.languages {
+  color: inherit;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-left: 1px solid #fff;
+}
+
+.languages a {
+  color: #ffb300;
+  display: block;
+  padding: 0 14px;
+  text-decoration: none !important;
+}
+.languages a.active {
+  color: #fff;
+}
+.languages a:last-of-type {
+  border-left: 1px solid #fff;
+}

@@ -1,0 +1,37 @@
+.art_navigation_links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+.link_item {
+  font-size: 20px;
+  color: #333;
+  text-decoration: none;
+  padding: 16px 0;
+  display: inline-block;
+  list-style: none;
+  text-decoration: none !important;
+}
+.bar_icon {
+  display: none;
+}
+.link_item:hover {
+  color: #ffb300;
+}
+
+@media screen and (max-width: 850px) {
+  .art_navigation_links {
+    display: none;
+  }
+  .bar_icon {
+    display: block;
+    margin-left: auto;
+    padding: 0.5rem 1rem;
+  }
+  .bar_icon > svg {
+    font-size: 2em !important;
+  }
+}

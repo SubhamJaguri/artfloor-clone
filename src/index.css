@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+body {
+  margin: 0;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Abel', sans-serif;
+  line-height: 1 !important;
+}
+
+.App {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.navbar_wrapper {
+  background-color: #333333;
+  height: 45px;
+}
+
+.main_footer_outer_wrapper {
+  background-color: #333333;
+}

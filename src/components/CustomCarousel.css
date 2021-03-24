@@ -1,0 +1,48 @@
+.carousel_item_wrapper {
+  height: 520px;
+  width: 100%;
+  position: relative;
+}
+.carousel_item_wrapper img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel_item_wrapper .caption_box {
+  width: 300px;
+  text-align: center;
+  background-color: #ffb300;
+  color: #fff;
+  position: absolute;
+  bottom: 16px;
+  left: 12px;
+  padding: 0.5rem 1rem;
+  /* border-bottom-left-radius: 40px; */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.caption_box h3 {
+  font-size: 26px;
+}
+
+.top_right,
+.bottom_left {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  transform: rotate(45deg);
+}
+.top_right {
+  top: -11px;
+  right: -11px;
+  background-color: #fff;
+}
+.bottom_left {
+  bottom: -10px;
+  left: -10px;
+  background-color: transparent;
+}

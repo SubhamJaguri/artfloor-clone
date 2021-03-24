@@ -1,0 +1,87 @@
+.art_header {
+  width: 100%;
+  display: flex;
+  padding: 10px 0 0 0;
+}
+.art_logo {
+  font-family: 'Abel', sans-serif;
+  float: left;
+  display: flex;
+}
+.art_top-search {
+  margin-left: auto;
+  padding: 5px;
+}
+.art_top-search form {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+.art_top-search input {
+  border: 1px solid #e6e6e6;
+  outline: 0;
+  background-color: Transparent;
+  /* width: 77%; */
+  height: 34px;
+  margin: 0;
+  padding: 0 40px 0 15px;
+  font-size: 16px;
+  color: #333;
+}
+.btn-search {
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: #ffb300;
+}
+
+.art_moto em {
+  color: #ffb300;
+}
+
+.drawer_list_items {
+  position: fixed;
+  right: 0;
+  width: 320px;
+  height: 100%;
+  top: 0;
+  background: #333;
+  color: #fff;
+  z-index: 100;
+  display: flex;
+  transform: translateX(320px);
+}
+.drawer_list_items.open {
+  /* display: none; */
+  transform: translateX(0);
+  transition: transform 0.4s ease-in-out;
+}
+
+.drawer_list_items > ul {
+  list-style: none;
+}
+.drawer_list_items ul li:not(:last-of-type) {
+  border-bottom: 2px solid #ccc;
+}
+.drawer_list_items a {
+  color: #fff;
+  font-size: 16px;
+}
+.drawer_list_items li:hover a {
+  color: #ffb300;
+}
+
+@media screen and (max-width: 850px) {
+  .art_header {
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .art_top-search {
+    margin-left: 0;
+  }
+}

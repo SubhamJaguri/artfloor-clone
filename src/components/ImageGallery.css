@@ -1,0 +1,106 @@
+.galarySection {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.galarySection .images-wrapper {
+  width: 100%;
+  /* padding: 0.5rem 1rem; */
+  margin: 2em auto;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(140px, 1fr));
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.galarySection .images-wrapper img {
+  -o-object-fit: contain;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.galarySection .images-wrapper .img {
+  position: relative;
+}
+.images-wrapper > .img:nth-of-type(9n + 1) {
+  grid-row: 1 / 3;
+  grid-column: 1 / 3;
+}
+
+.images-wrapper > .img:nth-of-type(9n + 1) > .caption_box {
+  opacity: 1;
+  width: 40%;
+  height: auto;
+}
+
+.galarySection .images-wrapper .caption_box {
+  width: 90%;
+  text-align: center;
+  background-color: #ffb300;
+  color: #fff;
+  position: absolute;
+  bottom: 16px;
+  left: 12px;
+  padding: 0.5rem 1rem;
+  /* border-bottom-left-radius: 40px; */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.images-wrapper .img:hover .caption_box {
+  opacity: 1;
+}
+.caption_box h4 {
+  font-size: 100%;
+}
+
+.tile_image {
+  filter: grayscale(0%) contrast(100%);
+  transition: all 0.4s ease-in-out;
+}
+.tile_image:hover {
+  filter: grayscale(100%) contrast(60%);
+}
+
+.top_right,
+.bottom_left {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  transform: rotate(45deg);
+}
+.top_right {
+  top: -11px;
+  right: -11px;
+  background-color: #fff;
+}
+.bottom_left {
+  bottom: -10px;
+  left: -10px;
+  background-color: transparent;
+}
+.bottom_triangle::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: -13px;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #ffb300;
+  transform: rotate(45deg);
+}
+@media screen and (max-width: 550px) {
+  .images-wrapper > .img:nth-of-type(9n + 1) {
+    grid-row: 1;
+    grid-column: 1;
+  }
+}
